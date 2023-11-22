@@ -1,0 +1,41 @@
+{
+    "sourceLanguage": "en",
+    "strings": {
+        "E-mail address": {
+            "comment": "The placeholder text of the e-mail address field",
+            "localizations": {
+                "fr": {
+                    "stringUnit": {
+                        "state": "translated",
+                        "value": "Adresse e-mail"
+                    }
+                },
+                "de": {
+                    "stringUnit": {
+                        "state": "translated",
+                        "value": "E-Mail-Adresse"
+                    }
+                },
+                "it": {
+                    "stringUnit": {
+                        "state": "translated",
+                        "value": "Indirizzo e-mail"
+                    }
+                },
+                "nl": {
+                    "stringUnit": {
+                        "state": "translated",
+                        "value": "E-mailadres"
+                    }
+                },
+                "es": {
+                    "stringUnit": {
+                        "state": "translated",
+                        "value": "Dirección de correo electrónico"
+                    }
+                }
+            }
+        }
+    },
+    "version": "1.0"
+}
