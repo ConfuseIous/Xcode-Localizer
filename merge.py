@@ -12,7 +12,7 @@ sentences = sentence_str.split("\n")
 
 should_trim = True # Set to True if you want to remove all leading and trailing spaces from the sentences
 file_name = "data.json"
-language_key = "es"
+language_key = "zh-Hans"
 
 with open(file_name, "r", encoding="utf-8") as input_file:
     json_data = json.load(input_file)
@@ -30,6 +30,11 @@ with open(file_name, "r", encoding="utf-8") as input_file:
     for original_sentence, sentence in zip(original_sentences, sentences):
         if should_trim:
             sentence = sentence.strip()
+
+        # Create the localizations key if it doesn't exist
+        if "localizations" not in json_data["strings"][original_sentence]:
+            json_data["strings"][original_sentence]["localizations"] = {}
+
         json_data["strings"][original_sentence]["localizations"][language_key] = {
             "stringUnit": {
                 "state": "translated",
